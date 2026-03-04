@@ -1,0 +1,40 @@
+[
+  {
+    "ContainingType": "ProjetosAPI.Endpoints.ProjetoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapProjetoEndpoints\u003Eb__0_0",
+    "RelativePath": "projetos",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetosAPI.Endpoints.ProjetoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapProjetoEndpoints\u003Eb__0_1",
+    "RelativePath": "projetos",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projeto",
+        "Type": "ProjetosAPI.Models.Projeto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
