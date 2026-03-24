@@ -1,8 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using ProjetosAPI.Data;
 using ProjetosAPI.Endpoints;
+using DotNetEnv;
 
 var builder = WebApplication.CreateBuilder(args);
+
+Env.Load();
 
 // 🔐 Connection String via Environment Variable
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -33,5 +36,6 @@ app.UseHttpsRedirection();
 app.UseCors("AllowFrontend");
 
 app.MapProjetoEndpoints();
+app.MapEmailEndpoints();
 
 app.Run();
